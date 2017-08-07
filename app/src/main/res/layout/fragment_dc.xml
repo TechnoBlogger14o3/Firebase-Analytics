@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:alpha="0.5"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnBatMan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/batman"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnWonderWoman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/wonder_woman"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnSuperMan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/superman"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnGreenArrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/green_arrow"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnFlash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/flash"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

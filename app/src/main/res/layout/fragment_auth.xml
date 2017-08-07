@@ -1,0 +1,133 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:alpha="0.5"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/please_provide_your_phone_number"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/phone_auth_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="23dp"
+                android:background="@drawable/bg_edt"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="2.0">
+
+                <EditText
+                    android:id="@+id/field_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+                    android:drawablePadding="14dp"
+                    android:drawableStart="@android:drawable/ic_menu_call"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/field_verification_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:drawableLeft="@android:drawable/ic_menu_send"
+                    android:drawablePadding="14dp"
+                    android:drawableStart="@android:drawable/ic_menu_send"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="@string/hint_verification_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="23dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_start_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/start_phone_auth"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/button_verify_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/verify_phone_auth"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/button_resend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/resend_phone_auth"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/resend_phone_reset"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>
